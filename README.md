@@ -55,7 +55,7 @@ The first 5 rows of the dataset provide a snapshot of the typical applicant prof
 | 4     | b      | 20.17 | 5.625 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | s       | 00120   | 0      | +              |
 Observations:
 
--The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
+- The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
 Income also varies widely, from 0 to 824, suggesting that applicants come from diverse financial backgrounds.Observations:
 - The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
 Income also varies widely, from 0 to 824, suggesting that applicants come from diverse financial backgrounds.
