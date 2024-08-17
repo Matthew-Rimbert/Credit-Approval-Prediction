@@ -112,7 +112,35 @@ memory usage: 86.4+ KB
 
 The distribution of applicant income shows a highly skewed pattern, with most applicants having low income. This skewness might influence the model's ability to generalize well across different income levels.
 
-## 🗒️ Conclusion
+### Debt Distribution
+![Screenshot 2024-08-17 161534](https://github.com/user-attachments/assets/58dd2862-e63f-4d2a-9b92-c197123733cf)
+
+The debt distribution among applicants is more varied, with a noticeable decrease in frequency as debt amounts increase. This distribution provides insights into how debt levels might impact credit approval.
+
+### Pairplot for Numerical Features
+![Screenshot 2024-08-17 161553](https://github.com/user-attachments/assets/ccec791e-8613-40ac-b6d7-ecee311dba3b)
+
+The pairplot below shows the relationships between key numerical features such as debt, years employed, credit score, and income. The plot helps in identifying potential correlations and outliers.
+
+### Correlation Heatmap
+![Screenshot 2024-08-17 161607](https://github.com/user-attachments/assets/e8478d52-79a4-403a-8f9c-cbaddc4c1806)
+
+The heatmap below visualizes the correlation between numerical features. The darker the color, the stronger the correlation. For instance, debt and years employed show a moderate correlation, which might influence the model's predictions.
+
+## 📈 Results
+### Confusion Matrix
+![Screenshot 2024-08-17 161620](https://github.com/user-attachments/assets/50b87216-deba-4f87-aa48-2b3fc71b401f)
+The confusion matrix below illustrates the model's performance in predicting approved versus rejected credit applications. The model shows strong performance with minimal false positives and false negatives.
+
+### ROC Curve
+![Screenshot 2024-08-17 161633](https://github.com/user-attachments/assets/a9fd672f-79fb-4e79-aca6-502a25184563)
+The ROC curve shows the true positive rate against the false positive rate at various threshold settings. The AUC score of 0.94 indicates that the model has a high ability to distinguish between approved and rejected applications.
+
+### Precision-Recall Curve
+![Screenshot 2024-08-17 161647](https://github.com/user-attachments/assets/628d1c39-c946-4d6f-9bae-099b96664b54)
+The precision-recall curve helps in understanding the trade-off between precision and recall for different thresholds. The curve shows that the model maintains high precision across a wide range of recall values, which is beneficial for imbalanced datasets like this one.
+
+# 🗒️ Conclusion
 
 This project successfully demonstrates the use of logistic regression to predict credit approval based on financial and personal data. The model achieved an accuracy of 85.99%, with a strong AUC score of 93.52%. The insights gained from this model can help in making informed decisions for credit risk management.
 
