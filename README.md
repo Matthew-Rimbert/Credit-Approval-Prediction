@@ -42,6 +42,7 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_auc_sco
 import warnings
 
 warnings.filterwarnings(action='ignore', category=UserWarning, module='sklearn')
+
 ```
 
 # Load and preprocess the data
@@ -93,6 +94,55 @@ weighted avg       X.XX      X.XX      X.XX       XXX
 | 687   | a      | 25.25 | 13.500 | y       | p            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00200   | 1      | -              |
 | 688   | b      | 17.92 | 0.205  | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | g       | 00280   | 750    | -              |
 | 689   | b      | 35.00 | 3.375  | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00000   | 0      | -              |
+
+### Data Description:
+
+| Statistic  | Gender | Age  | Debt  | Married | BankCustomer | EducationLevel | Ethnicity | YearsEmployed | PriorDefault | Employed | CreditScore | DriversLicense | Citizen | ZipCode | Income | ApprovalStatus |
+|------------|--------|------|-------|---------|--------------|----------------|-----------|---------------|--------------|----------|-------------|----------------|---------|---------|--------|----------------|
+| **count**  | 690    | 690  | 690   | 690     | 690          | ...            | ...       | 690           | 690          | 690      | 690         | 690            | 690     | 690     | 690    | 690            |
+| **unique** | 3      | 350  | NaN   | 4       | 4            | ...            | ...       | NaN           | 2            | 2        | NaN         | 2              | 3       | 171     | NaN    | 2              |
+| **top**    | b      | ?    | NaN   | u       | g            | ...            | ...       | NaN           | NaN          | NaN      | NaN         | f              | g       | 00000   | NaN    | -              |
+| **freq**   | 468    | 12   | NaN   | 519     | 519          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | 374            | 625     | 132     | NaN    | 383            |
+| **mean**   | NaN    | NaN  | 4.759 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 1017.4 | NaN            |
+| **std**    | NaN    | NaN  | 4.978 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 5210.1 | NaN            |
+| **min**    | NaN    | NaN  | 0.000 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 0      | NaN            |
+| **25%**    | NaN    | NaN  | 1.000 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 0      | NaN            |
+| **50%**    | NaN    | NaN  | 2.750 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 5      | NaN            |
+| **75%**    | NaN    | NaN  | 7.208 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 395.5  | NaN            |
+| **max**    | NaN    | NaN  | 28.00 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 100000 | NaN            |
+
+### Data Info:
+
+```plaintext
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 690 entries, 0 to 689
+Data columns (total 16 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Gender          690 non-null    object 
+ 1   Age             690 non-null    object 
+ 2   Debt            690 non-null    float64
+ 3   Married         690 non-null    object 
+ 4   BankCustomer    690 non-null    object 
+ 5   EducationLevel  690 non-null    object 
+ 6   Ethnicity       690 non-null    object 
+ 7   YearsEmployed   690 non-null    float64
+ 8   PriorDefault    690 non-null    object 
+ 9   Employed        690 non-null    object 
+ 10  CreditScore     690 non-null    int64  
+ 11  DriversLicense  690 non-null    object 
+ 12  Citizen         690 non-null    object 
+ 13  ZipCode         690 non-null    object 
+ 14  Income          690 non-null    int64  
+ 15  ApprovalStatus  690 non-null    object 
+dtypes: float64(2), int64(2), object(12)
+memory usage: 86.4+ KB
+```
+## 🗒️ Conclusion
+
+This project successfully demonstrates the use of logistic regression to predict credit approval based on financial and personal data. The model achieved an accuracy of 85.99%, with a strong AUC score of 93.52%. The insights gained from this model can help in making informed decisions for credit risk management.
+
+Future enhancements could involve experimenting with more advanced machine learning models, incorporating additional features such as credit history length and credit utilization ratio, and integrating real-time data processing for live credit approval predictions.
 
 
 
