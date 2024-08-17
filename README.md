@@ -77,6 +77,7 @@ Observations:
 - The ApprovalStatus is mostly negative, reflecting potential risk factors such as high debt or low income.
 
 ### Data Description:
+This table summarizes the key statistics of the dataset, highlighting the distribution of various attributes across all applicants. The mean, std, and range (min-max) of attributes like Debt, Income, and YearsEmployed provide insights into the overall financial health of the applicant pool.
 
 | Statistic  | Gender | Age  | Debt  | Married | BankCustomer | EducationLevel | Ethnicity | YearsEmployed | PriorDefault | Employed | CreditScore | DriversLicense | Citizen | ZipCode | Income | ApprovalStatus |
 |------------|--------|------|-------|---------|--------------|----------------|-----------|---------------|--------------|----------|-------------|----------------|---------|---------|--------|----------------|
@@ -91,6 +92,11 @@ Observations:
 | **50%**    | NaN    | NaN  | 2.750 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 5      | NaN            |
 | **75%**    | NaN    | NaN  | 7.208 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 395.5  | NaN            |
 | **max**    | NaN    | NaN  | 28.00 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 100000 | NaN            |
+Key Insights:
+
+- The average debt (mean) is 4.759, with a high standard deviation (std) of 4.978, indicating a wide range of debt levels among applicants.
+- Income shows a very high variance, which might affect the model's ability to predict credit approval accurately.
+- The CreditScore distribution is skewed, with a large portion of applicants having lower credit scores, which might lead to more denials.
 
 ### Data Info:
 
@@ -119,6 +125,11 @@ Data columns (total 16 columns):
 dtypes: float64(2), int64(2), object(12)
 memory usage: 86.4+ KB
 ```
+Analysis:
+
+- The dataset includes 690 entries, with a mix of numerical (Debt, Income, etc.) and categorical (Gender, Married, etc.) features.
+- The Non-Null Count indicates there are no missing values in the dataset, suggesting that all columns are fully populated and ready for model training.
+- The Dtype column shows that most features are categorical (object), requiring encoding before they can be used in a logistic regression model.
 
 ## 📊 Data Visualization
 ### Income Distribution
