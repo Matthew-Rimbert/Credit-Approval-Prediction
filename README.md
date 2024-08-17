@@ -44,6 +44,8 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='sklearn')
 
 ### First 5 Rows:
 
+The first 5 rows of the dataset provide a snapshot of the typical applicant profile. This includes demographic data such as gender, age, marital status, and citizenship, as well as financial indicators like debt, income, and credit score. These variables are critical for predicting credit approval status, represented by the ApprovalStatus column.
+
 | Index | Gender | Age   | Debt  | Married | BankCustomer | EducationLevel | Ethnicity | YearsEmployed | PriorDefault | Employed | CreditScore | DriversLicense | Citizen | ZipCode | Income | ApprovalStatus |
 |-------|--------|-------|-------|---------|--------------|----------------|-----------|---------------|--------------|----------|-------------|----------------|---------|---------|--------|----------------|
 | 0     | b      | 30.83 | 0.000 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | g       | 00202   | 0      | +              |
@@ -51,8 +53,15 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='sklearn')
 | 2     | a      | 24.50 | 0.500 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | g       | 00280   | 824    | +              |
 | 3     | b      | 27.83 | 1.540 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00100   | 3      | +              |
 | 4     | b      | 20.17 | 5.625 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | s       | 00120   | 0      | +              |
+Observations:
+
+-The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
+Income also varies widely, from 0 to 824, suggesting that applicants come from diverse financial backgrounds.Observations:
+- The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
+Income also varies widely, from 0 to 824, suggesting that applicants come from diverse financial backgrounds.
 
 ### Last 5 Rows:
+The last 5 rows of the dataset provide a similar snapshot, but they often include applicants who might represent edge cases or the tail end of the distribution. These rows are crucial for understanding how the model handles less common applicant profiles.
 
 | Index | Gender | Age   | Debt   | Married | BankCustomer | EducationLevel | Ethnicity | YearsEmployed | PriorDefault | Employed | CreditScore | DriversLicense | Citizen | ZipCode | Income | ApprovalStatus |
 |-------|--------|-------|--------|---------|--------------|----------------|-----------|---------------|--------------|----------|-------------|----------------|---------|---------|--------|----------------|
@@ -61,6 +70,11 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='sklearn')
 | 687   | a      | 25.25 | 13.500 | y       | p            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00200   | 1      | -              |
 | 688   | b      | 17.92 | 0.205  | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | g       | 00280   | 750    | -              |
 | 689   | b      | 35.00 | 3.375  | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00000   | 0      | -              |
+
+Observations:
+
+- The Debt values in these rows range higher, particularly with one applicant carrying a debt of 13.5. This could be a significant factor in credit denial.
+- The ApprovalStatus is mostly negative, reflecting potential risk factors such as high debt or low income.
 
 ### Data Description:
 
@@ -138,6 +152,7 @@ The ROC curve shows the true positive rate against the false positive rate at va
 
 ### Precision-Recall Curve
 ![Screenshot 2024-08-17 161647](https://github.com/user-attachments/assets/628d1c39-c946-4d6f-9bae-099b96664b54)
+
 The precision-recall curve helps in understanding the trade-off between precision and recall for different thresholds. The curve shows that the model maintains high precision across a wide range of recall values, which is beneficial for imbalanced datasets like this one.
 
 # 🗒️ Conclusion
