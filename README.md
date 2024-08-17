@@ -72,6 +72,26 @@ visualize_results(y_test, y_pred, y_pred_proba)
 weighted avg       X.XX      X.XX      X.XX       XXX
 ```
 
+## 📊 Data Overview
+
+<table>
+  <tr>
+    <td>
+
+### First 5 Rows:
+```plaintext
+   Gender    Age   Debt Married BankCustomer  ... DriversLicense Citizen  ZipCode Income ApprovalStatus
+0      b  30.83  0.000       u            g  ...              f       g    00202      0              +
+1      a  58.67  4.460       u            g  ...              f       g    00043    560              +
+2      a  24.50  0.500       u            g  ...              f       g    00280    824              +
+3      b  27.83  1.540       u            g  ...              t       g    00100      3              +
+4      b  20.17  5.625       u            g  ...              f       s    00120      0              +
+
+[5 rows x 16 columns]
+</td>
+<td>
+
+
 
 
 
