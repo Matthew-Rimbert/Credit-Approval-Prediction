@@ -53,6 +53,7 @@ The first 5 rows of the dataset provide a snapshot of the typical applicant prof
 | 2     | a      | 24.50 | 0.500 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | g       | 00280   | 824    | +              |
 | 3     | b      | 27.83 | 1.540 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | t              | g       | 00100   | 3      | +              |
 | 4     | b      | 20.17 | 5.625 | u       | g            | ...            | ...       | ...           | ...          | ...      | ...         | f              | s       | 00120   | 0      | +              |
+
 Observations:
 
 - The Debt column shows a range from 0 to 5.625 for these applicants, indicating variability in financial obligations.
@@ -92,6 +93,7 @@ This table summarizes the key statistics of the dataset, highlighting the distri
 | **50%**    | NaN    | NaN  | 2.750 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 5      | NaN            |
 | **75%**    | NaN    | NaN  | 7.208 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 395.5  | NaN            |
 | **max**    | NaN    | NaN  | 28.00 | NaN     | NaN          | ...            | ...       | NaN           | NaN          | NaN      | NaN         | NaN            | NaN     | NaN     | 100000 | NaN            |
+
 Key Insights:
 
 - The average debt (mean) is 4.759, with a high standard deviation (std) of 4.978, indicating a wide range of debt levels among applicants.
