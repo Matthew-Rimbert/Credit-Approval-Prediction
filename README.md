@@ -20,8 +20,11 @@ This project aims to predict credit approval using machine learning, specificall
    - Load the credit dataset and preprocess it by handling missing values, encoding categorical variables, and scaling numerical features.
   
 2. **Data Visualization:** 
-   - Visualize the distributions of key variables such as income and debt.
-   - Create correlation heatmaps to understand the relationships between features.
+### Income Distribution
+![Income Distribution]![Screenshot 2024-08-17 161520](https://github.com/user-attachments/assets/99cae952-8700-4d1f-81fb-a03d34254efb)
+
+The distribution of applicant income shows a highly skewed pattern, with most applicants having low income. This skewness might influence the model's ability to generalize well across different income levels.
+
   
 3. **Train and Evaluate a Logistic Regression Model:**
    - Train the model on the processed data and evaluate its performance using accuracy, confusion matrix, and classification metrics.
