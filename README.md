@@ -157,10 +157,12 @@ The heatmap below visualizes the correlation between numerical features. The dar
 ## 📈 Results
 ### Confusion Matrix
 ![Screenshot 2024-08-17 161620](https://github.com/user-attachments/assets/50b87216-deba-4f87-aa48-2b3fc71b401f)
+
 The confusion matrix below illustrates the model's performance in predicting approved versus rejected credit applications. The model shows strong performance with minimal false positives and false negatives.
 
 ### ROC Curve
 ![Screenshot 2024-08-17 161633](https://github.com/user-attachments/assets/a9fd672f-79fb-4e79-aca6-502a25184563)
+
 The ROC curve shows the true positive rate against the false positive rate at various threshold settings. The AUC score of 0.94 indicates that the model has a high ability to distinguish between approved and rejected applications.
 
 ### Precision-Recall Curve
